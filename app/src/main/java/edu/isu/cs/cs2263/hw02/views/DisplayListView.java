@@ -8,7 +8,12 @@ import javafx.scene.control.ListView;
 import javafx.scene.layout.BorderPane;
 import javafx.scene.text.Font;
 import javafx.scene.text.FontWeight;
+import lombok.extern.log4j.Log4j2;
 
+/**
+ * Add Log4j2 to make logging available for the class
+ */
+@Log4j2
 public class DisplayListView extends AppView {
 
     ListView<Course> lstCourses;
