@@ -35,13 +35,14 @@ public class App extends Application {
 
     /**
      * Added @Getter for courses to clean up getter method
+     * Added @Getter for scene current view and views for testing
      */
     private @Getter Vector<Course> courses;
-    private AppView currentView;
-    private final Map<String, AppView> views;
+    private @Getter AppView currentView;
+    private @Getter final Map<String, AppView> views;
     private BorderPane mainLayout;
     private ChoiceBox<String> depts;
-    private Scene scene;
+    private @Getter Scene scene;
 
     public App() {
         views = Maps.newHashMap();
@@ -177,7 +178,6 @@ public class App extends Application {
     }
 
     public static void main(String[] args) {
-        System.out.println("Test");
         log.info("@Lombok4j2 outputs to console");
         log.debug("@Lombok4j2 printing");
         log.error("@Lombok4j2 outputs to console");

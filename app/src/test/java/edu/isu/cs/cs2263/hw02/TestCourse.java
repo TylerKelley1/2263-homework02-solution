@@ -9,7 +9,6 @@ import edu.isu.cs.cs2263.hw02.data.Course;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.when;
 import org.junit.jupiter.api.extension.*;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
@@ -19,7 +18,7 @@ public class TestCourse {
     @Mock
     Course testCourse;
     /**
-     * Helper mehtod that auto generates the same Course object for every test
+     * Helper method that auto generates the same Course object for every test
      * @return testCourse Course object
      */
     @BeforeEach
